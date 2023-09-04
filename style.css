@@ -1,0 +1,31 @@
+/*resize and space out images*/
+img {
+  height: 200px;
+  width: 300px;
+  margin: 0 25px;
+}
+
+/*add space around title*/
+h1 {
+  padding: 25px 0;
+}
+
+/*increase p font-size*/
+p {
+  font-size: 18pt;
+}
+
+/*create class to be added when img is selected*/
+.img-selected {
+  border: 5px solid;
+}
+
+/*add space after footer*/
+footer {
+  margin-bottom: 15px;
+}
+
+/*decrease font-size of footer text*/
+footer p {
+  font-size: 12pt;
+}

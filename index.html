@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holiday Price Calculator</title>
+  <!--add bootstrap stylesheet-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <!--create title and center it in own div so it stays on page when other HTML is changed by JS-->
+  <div class="container text-center">
+    <h1>Holiday Price Calculator</h1>
+  </div>
+  <!--contain main content in div to be manipulated by JS-->
+  <div id="hero">
+    <div class="container text-center">
+      <!--add line after title-->
+      <hr>
+      <!--create 1st CTA-->
+      <p>Click on an image to choose where you want to go!</p>
+    </div>
+    <!--create location options, centered and responsive-->
+    <div class="container text-center d-flex flex-column flex-lg-row justify-content-center">
+      <figure id="cyprus-fig">
+        <img id="cyprus-img" class="country-imgs" src="https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80" alt="Cyprus">
+        <figcaption>Cyprus</figcaption>
+      </figure>
+      <figure id="norway-fig">
+        <img id="norway-img" class="country-imgs" src="https://images.unsplash.com/photo-1519338381761-c7523edc1f46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2880&q=80" alt="Cyprus">
+        <figcaption>Norway</figcaption>
+      </figure>
+      <figure id="portugal-fig">
+        <img id="portugal-img" class="country-imgs" src="https://images.unsplash.com/photo-1486571698588-a2204703bec8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3262&q=80" alt="Cyprus">
+        <figcaption>Portugal</figcaption>
+      </figure>
+    </div>
+    <!--add a line between sections-->
+    <hr>
+    <!--create 2nd CTA and center it-->
+    <div class="container text-center">
+      <p>How would you like to travel?</p>
+    </div>
+    <!--create travel options, centered and responsive-->
+    <div class="container text-center d-flex flex-column flex-lg-row justify-content-center">
+      <figure id=train-fig>
+        <img id="train-img" class="travel-imgs" src="https://images.unsplash.com/photo-1527295110-5145f6b148d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2031&q=80" alt="train">
+        <figcaption>Train</figcaption>
+      </figure>
+      <figure id="aeroplane-fig">
+        <img id="aeroplane-img" class="travel-imgs" src="https://images.unsplash.com/photo-1525396524423-64f7b55f5b33?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2030&q=80" alt="aeroplane">
+        <figcaption>Aeroplane</figcaption>
+      </figure>
+      <figure id="ferry-fig">
+        <img id="ferry-img" class="travel-imgs" src="https://images.unsplash.com/photo-1564835099575-3a09829cbee8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZmVycnl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" alt="ferry">
+        <figcaption>Ferry</figcaption>
+      </figure>
+    </div>
+    <!--add a line between sections-->
+    <hr>
+    <!--create 3rd CTA and center it-->
+    <div class="container text-center">
+      <p>And where would you like to stay?</p>
+    </div>
+    <!--create accommodation options, centered and responsive-->
+    <div class="container text-center d-flex flex-column flex-lg-row justify-content-center">
+      <figure id="hotel-fig">
+        <img id="hotel-img" class="accommodation-imgs" src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aG90ZWx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" alt="hotel">
+        <figcaption>Hotel</figcaption>
+      </figure>
+      <figure id="campsite-fig">
+        <img id="campsite-img" class="accommodation-imgs" src="https://images.unsplash.com/photo-1598417136294-7c1c4c94931f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FtcHNpdGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60">
+        <figcaption>Campsite</figcaption>
+      </figure>
+      <figure id="apartment-fig">
+        <img id="apartment-img" class="accommodation-imgs" src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXBhcnRtZW50fGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="apartment">
+        <figcaption>Apartment</figcaption>
+      </figure>
+    </div>
+    <!--add line before button section-->
+    <hr>
+    <!--add instructions and buttons, centered-->
+    <div class="container text-center">
+      <p>When you've chosen your options, click the button below to calculate the price!</p>
+      <button id="calculate-btn" class="btn btn-primary btn-lg">Calculate</button>
+    </div>
+    <hr>
+    <div class="container text-center">
+      <p>Can't decide? Click the wildcard button to let us choose a random selection for you!</p>
+      <button id="wildcard-btn" class="btn btn-success btn-lg">Wildcard!</button>
+    </div>
+  </div>
+  <hr>
+  <footer class="container text-center">
+    <p>© Catherine Wood, 2023</p>
+  </footer>
+  <!--add bootstrap scripts-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script  src="./script.js"></script>
+</body>
+
+
+</body>
+</html>
